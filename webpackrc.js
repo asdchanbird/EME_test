@@ -1,0 +1,1 @@
+{ loaders: { sass: { indentedSyntax: true } } }

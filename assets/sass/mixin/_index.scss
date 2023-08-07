@@ -1,0 +1,120 @@
+@import '../variable/index';
+
+// rwd基礎設定
+@mixin rwd($width) {
+    @media (min-width: $width) {
+        @content  
+    }  
+};
+@mixin h1() {
+    // color: $font-color;
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1;
+    @include rwd($phone) {
+        font-size: 2.5rem;
+    }
+    @include rwd($pad) {
+        font-size: 2.75rem;
+    }
+    @include rwd($desktop) {
+        font-size: 3rem;
+    }
+    @content;
+};
+@mixin h2() {
+    // color: $font-color;
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    @include rwd($phone) {
+        font-size: 1.75rem;
+    }
+    @include rwd($pad) {
+        font-size: 2rem;
+    }
+    @include rwd($desktop) {
+        font-size: 2.25rem;
+    }
+    @content;
+};
+@mixin h3() {
+    // color: $font-color;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    @include rwd($phone) {
+        font-size: 1.5rem;
+    }
+    @include rwd($pad) {
+        font-size: 1.75rem;
+    }
+    @include rwd($desktop) {
+        font-size: 2rem;
+    }
+    @content;
+};
+@mixin h4() {
+    // color: $font-color;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2rem;
+    @include rwd($phone) {
+        font-size: 1.2rem;
+    }
+    @include rwd($pad) {
+        font-size: 1.5rem;
+    }
+    @include rwd($desktop) {
+        font-size: 1.5rem;
+    }
+    @content;
+};
+@mixin h5() {
+    // color: $font-color;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2rem;
+    @include rwd($phone) {
+        font-size: 1rem;
+    }
+    @include rwd($pad) {
+        font-size: 1.25rem;
+    }
+    @include rwd($desktop) {
+        font-size: 1.25rem;
+    }
+    @content;
+};
+@mixin h6() {
+    // color: $font-color;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2rem;
+    @include rwd($phone) {
+        font-size: 1rem;
+    }
+    @include rwd($pad) {
+        font-size: 1.2rem;
+    }
+    @include rwd($desktop) {
+        font-size: 1.2rem;
+    }
+    @content;
+};
+@mixin p() {
+    // color: $font-color;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 2rem;
+    @include rwd($phone) {
+        font-size: 0.75rem;
+    }
+    @include rwd($pad) {
+        font-size: 1rem;
+    }
+    @include rwd($desktop) {
+        font-size: 1rem;
+    }
+    @content;
+};
